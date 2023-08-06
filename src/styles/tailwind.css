@@ -8,13 +8,3 @@ textarea {
     box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
-// make all images responsive
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-// make border-box the default box model
-html {
-    box-sizing: border-box;
-}

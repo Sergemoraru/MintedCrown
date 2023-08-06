@@ -42,13 +42,13 @@ export function Hero() {
             domain.
           </p>
           <div className="mt-10 flex justify-center gap-x-6">
-            <Button href="/register">Examples</Button>
+            <Button href="/register">Services</Button>
             <Button href="" variant="outline">
               <svg
                 aria-hidden="true"
                 className="h-3 w-2 flex-none fill-emerald-600 group-active:fill-current"
               ></svg>
-              <span className="">Meet the team</span>
+              <span className="">Sectors</span>
             </Button>
           </div>
         </div>

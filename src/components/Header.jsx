@@ -94,24 +94,30 @@ export function Header() {
   return (
     <header className="pt-10">
       <Container>
-        <nav className="relative z-50 flex justify-between bottom-20">
+        <nav className="relative bottom-20 z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
-            <Link href="#" aria-label="Home" className='flex relative right-28 top-7 '>
+            <Link
+              href="/"
+              aria-label="Home"
+              className="relative right-28 top-7 flex "
+            >
               <Logo className="h-10 w-auto" />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
               <NavLink href="#features">Features</NavLink>
-              <NavLink href="#testimonials">Testimonials</NavLink>
+              <NavLink href="#testimonials">Sectors</NavLink>
               <NavLink href="#services">Services</NavLink>
+              <NavLink href="#faq">FAQ</NavLink>
+              <NavLink href="#meettheteam">Meet the Team</NavLink>
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
             {/* <div className="hidden md:block">
               <NavLink href="/login">Sign in</NavLink>
             </div> */}
-            <Button href="/register" color="blue">
+            <Button href="/contact" color="blue">
               <span>
-                Contact us <span className="hidden lg:inline">today</span>
+                Lets <span className="hidden lg:inline">Chat!</span>
               </span>
             </Button>
             <div className="-mr-1 md:hidden">

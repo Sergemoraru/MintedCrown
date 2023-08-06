@@ -87,7 +87,7 @@ function Plan({ name, price, description, href, features, featured = false }) {
         className="mt-8"
         aria-label={`Get started with the ${name} plan for ${price}`}
       >
-        Get started
+        More Info
       </Button>
     </section>
   )
@@ -98,7 +98,7 @@ export function Pricing() {
     <section
       id="pricing"
       aria-label="Pricing"
-      className="bg-teal-900 py-20 sm:py-32"
+      className="bg-teal-700 py-20 sm:py-32"
     >
       <Container>
         <div className="md:text-center">
@@ -116,7 +116,7 @@ export function Pricing() {
           <Plan
             name="Strategy and Advisory"
             description="Our expert wizards will guide your brand through the marketing maze."
-            href="/register"
+            href="#"
             features={[
               'Research market opportunities, challenges.',
               'Develop custom marketing roadmap.',
@@ -129,7 +129,7 @@ export function Pricing() {
             featured
             name="Social Media Sorcery"
             description="We conjure up engaging content and strategies to make your brand reign on social platforms."
-            href="/register"
+            href="#"
             features={[
               'Create shareable, engaging content.',
               'Tailor strategies for each platform.',
@@ -143,7 +143,7 @@ export function Pricing() {
           <Plan
             name="Majestic Campaign Crafting"
             description="From quirky to regal, we create enchanting marketing campaigns that captivate audiences."
-            href="/register"
+            href="#"
             features={[
               'Unearth brand essence, target audience.',
               'Craft quirky, captivating concepts.',
