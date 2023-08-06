@@ -23,7 +23,7 @@ export function CallToAction() {
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
             Get in touch today
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-white">
+          <p className="mt-4 text-lg tracking-tight text-teal-500">
             Ready to Ascend to Marketing Greatness? Step into the Realm of Minted Crown! 🚀👑✨
           </p>
           <Button href="/register" color="white" className="mt-10">

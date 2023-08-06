@@ -1,10 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react'
-import { ReactComponent as Logo } from '../images/logos/logo1.svg' // Adjust the path to your SVG file
+import logoImage from '../images/logos/crownlogo.png'
+import Image from 'next/image'
 
-const LogoComponent = () => (
-  <div>
-    <Logo width="100" height="40" />
-  </div>
+const Logo = () => (
+    <Image src={logoImage} alt="Crown Logo" width={250} height={200} />
 )
 
-export default LogoComponent
+export default Logo
