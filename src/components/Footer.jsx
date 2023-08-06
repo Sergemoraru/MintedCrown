@@ -9,9 +9,11 @@ export function Footer() {
     <footer className="bg-slate-50">
       <Container>
         <div className="py-16">
-          <Logo className="top-32 h-10 w-auto" />
-          <nav className="mt-10 text-sm" aria-label="quick links">
-            <div className="-my-1 flex justify-center gap-x-6">
+          <div className="flex relative top-32 mb-3 justify-center">
+            <Logo className="h-10 w-auto" />
+          </div>
+          <nav className="text-sm" aria-label="quick links">
+            <div className="bottom-10 -my-1 flex justify-center gap-x-6">
               <NavLink href="#features">Features</NavLink>
               <NavLink href="#testimonials">Testimonials</NavLink>
               <NavLink href="#services">Services</NavLink>
@@ -46,8 +48,8 @@ export function Footer() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-slate-500 sm:mt-0">
-            Copyright &copy; {new Date().getFullYear()} Minted Crown Marketing LLC. All rights
-            reserved.
+            Copyright &copy; {new Date().getFullYear()} Minted Crown Marketing
+            LLC. All rights reserved.
           </p>
         </div>
       </Container>
