@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client"
 import Link from 'next/link'
-
 import { Button } from '@/components/Button'
-import { Logo } from '@/components/Logo'
+import Logo from '@/components/Logo'
 import { SlimLayout } from '@/components/SlimLayout'
 
 export default function NotFound() {
@@ -10,7 +10,7 @@ export default function NotFound() {
     <SlimLayout>
       <div className="flex">
         <Link href="/" aria-label="Home">
-          {/* <Logo className="h-10 w-auto" /> */}
+          <Logo className="h-10 w-auto" />
         </Link>
       </div>
       <p className="mt-20 text-sm font-medium text-gray-700">404</p>

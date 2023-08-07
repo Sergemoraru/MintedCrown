@@ -15,6 +15,7 @@
     "@heroicons/react": "^2.0.18",
     "@tailwindcss/forms": "^0.5.3",
     "autoprefixer": "^10.4.12",
+    "babel": "^6.23.0",
     "clsx": "^1.2.1",
     "next": "13.4.12",
     "react": "18.2.0",
@@ -28,6 +29,7 @@
     "eslint-config-next": "13.4.12",
     "prettier": "^2.8.7",
     "prettier-plugin-tailwindcss": "^0.2.6",
-    "sharp": "^0.32.0"
+    "sharp": "^0.32.0",
+    "typescript": "5.1.6"
   }
 }
