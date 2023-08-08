@@ -4,18 +4,20 @@ import { Container } from '@/components/Container'
 import Logo from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer className="bg-slate-50">
       <Container>
         <div className="py-16">
           <div className="flex relative top-32 mb-3 justify-center">
-            <Logo className="h-10 w-auto" />
+            <Link href="/" aria-label="FooterLogo">
+                <Logo className="h-10 w-auto" />
+              </Link>
           </div>
           <nav className="text-sm" aria-label="quick links">
             <div className="bottom-10 -my-1 flex justify-center gap-x-6">
               <NavLink href="#features">Features</NavLink>
-              <NavLink href="#testimonials">Testimonials</NavLink>
+              <NavLink href="#sectors">Sectors</NavLink>
               <NavLink href="#services">Services</NavLink>
             </div>
           </nav>
