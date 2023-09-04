@@ -5,7 +5,7 @@ import { useState } from 'react'
 import Privacy from '@/components/Privacy'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Switch } from '@headlessui/react'
-import { headermin } from '@/components/headermin'
+import { headmin } from '@/components/headmin'
 import { Footermin } from '@/components/Footermin'
 import Link from 'next/link'
 
@@ -19,7 +19,7 @@ export default function Contact() {
 
   return (
     <div>
-      <headermin />
+      <headmin />
       <div className="isolate bg-white px-6 py-4 sm:py-32 lg:px-8">
         <div
           className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"

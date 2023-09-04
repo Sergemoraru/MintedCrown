@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Serge from '@/images/team/1569181399415.png'
 import Elizabeth from '@/images/team/elizabeth.jpeg'
 import Jacob from '@/images/team/jacob.jpeg'
-import { headermin } from '@/components/headermin'
+import { headmin } from '@/components/headmin'
 
 
 const people = [
@@ -41,7 +41,7 @@ export default function Team() {
       <div className="relative isolate overflow-hidden bg-white px-6 py-5 sm:py-32 lg:overflow-visible lg:px-0">
         <div className="absolute -inset-0 -z-10 overflow-hidden">
           <div className='relative'>
-            <headermin />
+            <headmin />
           </div>
         </div>
       </div>
