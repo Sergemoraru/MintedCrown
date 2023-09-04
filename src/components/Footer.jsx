@@ -6,28 +6,26 @@ import { NavLink } from '@/components/NavLink'
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-50">
+    <footer className=" relative">
       <Container>
-        <div className="py-16">
-          <div className="flex relative top-32 mb-3 justify-center">
+          <div className="flex relative top-32 justify-center">
             <Link href="/" aria-label="FooterLogo">
                 <Logo className="h-10 w-auto" />
               </Link>
           </div>
           <nav className="text-sm" aria-label="quick links">
-            <div className="bottom-10 -my-1 flex justify-center gap-x-6">
+            <div className="relative pt-3 pb-5 -my-1 flex justify-center gap-x-6">
               <NavLink href="#features">Features</NavLink>
               <NavLink href="#sectors">Sectors</NavLink>
               <NavLink href="#services">Services</NavLink>
             </div>
           </nav>
-        </div>
         <div className="flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row-reverse sm:justify-between">
           <div className="flex gap-x-6">
             <Link
               href="https://twitter.com"
               className="group"
-              aria-label="TaxPal on Twitter"
+              aria-label="Minted Crown Marketing on Twitter"
             >
               <svg
                 aria-hidden="true"
@@ -39,7 +37,7 @@ export default function Footer() {
             <Link
               href="https://github.com"
               className="group"
-              aria-label="TaxPal on GitHub"
+              aria-label="Developer's Github"
             >
               <svg
                 aria-hidden="true"

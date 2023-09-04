@@ -1,5 +1,5 @@
 {
-  "name": "tailwindui-salient",
+  "name": "mcm",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "browserslist": "defaults, not ie <= 11",
+  "browserslist": "defaults, not ie <= 11, Firefox >= 60",
   "dependencies": {
     "@headlessui/react": "^1.7.15",
     "@headlessui/tailwindcss": "^0.2.0",

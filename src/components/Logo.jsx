@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+
 import React from 'react'
 import logoImage from '../images/logos/crownlogo.png'
 import Image from 'next/image'

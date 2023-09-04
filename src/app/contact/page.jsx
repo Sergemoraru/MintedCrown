@@ -2,7 +2,7 @@
 'use client'
 
 import { useState } from 'react'
-import PrivacyModal from '@/components/Privacy'
+import Privacy from '@/components/Privacy'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Switch } from '@headlessui/react'
 import { Header } from '@/components/Header'
@@ -13,14 +13,9 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+
 export default function Contact() {
   const [agreed, setAgreed] = useState(false)
-  const [showPrivacyModal, setShowPrivacyModal] = useState(false)
-
-  const openPrivacyModal = () => {
-    setShowPrivacyModal(true)
-  }
-
 
   return (
     <div>
@@ -195,13 +190,14 @@ export default function Contact() {
               <Switch.Label className="text-sm leading-6 text-gray-600">
                 By selecting this, you agree to our{' '}
                 <Link
-                  href="#"
+                  href=""
                   className="font-semibold text-teal-600"
-                  onClick={openPrivacyModal}
+                  onClick={""}
                 >
                   privacy&nbsp;policy
                 </Link>
                 .
+                
               </Switch.Label>
             </Switch.Group>
           </div>
@@ -216,7 +212,7 @@ export default function Contact() {
         </form>
       </div>
       <Footer />
-      <PrivacyModal open={showPrivacyModal} setOpen={setShowPrivacyModal} />
+    
     </div>
   )
 }

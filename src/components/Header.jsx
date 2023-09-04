@@ -112,9 +112,6 @@ export function Header() {
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
-            {/* <div className="hidden md:block">
-              <NavLink href="/login">Sign in</NavLink>
-            </div> */}
             <Button href="/contact" color="blue">
               <span>
                 Lets <span className="hidden lg:inline">Chat!</span>
