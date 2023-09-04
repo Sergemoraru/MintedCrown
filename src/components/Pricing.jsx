@@ -96,8 +96,8 @@ function Plan({ name, price, description, href, features, featured = false }) {
 export function Pricing() {
   return (
     <section
-      id="pricing"
-      aria-label="Pricing"
+      id="services"
+      aria-label="Services offered by the company"
       className="bg-teal-700 py-20 sm:py-32"
     >
       <Container>
@@ -116,7 +116,7 @@ export function Pricing() {
           <Plan
             name="Strategy and Advisory"
             description="Our expert wizards will guide your brand through the marketing maze."
-            href="#"
+            href="/mcm-services/strategyAndAdvisory"
             features={[
               'Research market opportunities, challenges.',
               'Develop custom marketing roadmap.',
@@ -143,7 +143,7 @@ export function Pricing() {
           <Plan
             name="Majestic Campaign Crafting"
             description="From quirky to regal, we create enchanting marketing campaigns that captivate audiences."
-            href="#"
+            href="/"
             features={[
               'Unearth brand essence, target audience.',
               'Craft quirky, captivating concepts.',
