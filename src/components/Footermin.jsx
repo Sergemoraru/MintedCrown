@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { Container } from '@/components/Container'
 import Logo from '@/components/Logo'
 
-export function Footer2() {
+export function Footermin() {
   return (
     <footer className=" relative">
       <Container>

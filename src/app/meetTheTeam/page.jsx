@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
 import React from 'react'
-import { Footer2 } from '@/components/Footer2'
+import { Footermin } from '@/components/Footermin'
 import Image from 'next/image'
 import Serge from '@/images/team/1569181399415.png'
 import Elizabeth from '@/images/team/elizabeth.jpeg'
 import Jacob from '@/images/team/jacob.jpeg'
-import { Header2 } from '@/components/Header2'
+import { Headermin } from '@/components/Headermin'
 
 
 const people = [
@@ -41,7 +41,7 @@ export default function Team() {
       <div className="relative isolate overflow-hidden bg-white px-6 py-5 sm:py-32 lg:overflow-visible lg:px-0">
         <div className="absolute -inset-0 -z-10 overflow-hidden">
           <div className='relative'>
-            <Header2 />
+            <Headermin />
           </div>
         </div>
       </div>
@@ -120,7 +120,7 @@ export default function Team() {
           </ul>
         </div>
         <div className="pt-10">
-          <Footer2 />
+          <Footermin />
         </div>
       </div>
     </div>
