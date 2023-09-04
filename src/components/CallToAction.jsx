@@ -1,8 +1,6 @@
-import Image from 'next/image'
-
+// Note: Call to action section
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background-call-to-action.jpg'
 
 export function CallToAction() {
   return (
@@ -18,7 +16,7 @@ export function CallToAction() {
           <p className="mt-4 text-lg tracking-tight text-teal-600">
             Ready to Ascend to Marketing Greatness? Step into the Realm of Minted Crown! 🚀👑✨
           </p>
-          <Button href="/register" color="blue" className="mt-10">
+          <Button href="/contact" color="blue" className="mt-10">
             Contact us
           </Button>
         </div>

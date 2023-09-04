@@ -6,9 +6,7 @@ import Image from 'next/image'
 import Serge from '@/images/team/1569181399415.png'
 import Elizabeth from '@/images/team/elizabeth.jpeg'
 import Jacob from '@/images/team/jacob.jpeg'
-import Logo from '@/components/Logo'
-import LetsChatButton from '@/components/LetsChatButton'
-import GoHome from '@/components/GoHome'
+import { Header2 } from '@/components/Header2'
 
 
 const people = [
@@ -40,18 +38,14 @@ const people = [
 export default function Team() {
   return (
     <div>
-      <div className='relative'>
-        <div className='flex justify-between items-center pr-14 -mt-10'>
-          <div className='pt-20'>
-            <Logo />
+      <div className="relative isolate overflow-hidden bg-white px-6 py-5 sm:py-32 lg:overflow-visible lg:px-0">
+        <div className="absolute -inset-0 -z-10 overflow-hidden">
+          <div className='relative'>
+            <Header2 />
           </div>
-            <div className='flex gap-4'>
-              <GoHome />
-              <LetsChatButton/>
-            </div>
         </div>
       </div>
-      <div className="bg-white py-24 sm:py-32">
+      <div className="pb-12 sm:py-32">
         <div className="mx-auto my-0 max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -70,7 +64,7 @@ export default function Team() {
             {people.map((person) => (
               <li key={person.name}>
                 <Image
-                  className="w-full rounded-2xl object-cover"
+                  className="w-full rounded-2xl object-cover shadow-xl ring-1 ring-gray-400/10"
                   src={person.imgUrl}
                   height={100}
                   width={100}

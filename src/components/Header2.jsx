@@ -90,8 +90,8 @@ export function Header2() {
   return (
     <header>
       <Container>
-        <nav className="relative bottom-20 z-50 flex justify-between">
-          <div className="flex items-center lg:gap-x-24 md:gap-x-12">
+        <nav className="relative z-50 flex justify-between">
+          <div className="flex items-center md:gap-x-12 lg:gap-x-24">
             <Link
               href="/"
               aria-label="Home"
@@ -101,6 +101,11 @@ export function Header2() {
             </Link>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
+            <Button href="/" color="blue">
+              <span>
+                Go <span className="hidden lg:inline">Home</span>
+              </span>
+            </Button>
             <Button href="/contact" color="blue">
               <span>
                 Lets <span className="hidden lg:inline">Chat!</span>
