@@ -10,9 +10,6 @@ export default function StrategyAndAdvisory() {
   return (
     <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className='pt-12'>
-          <Header2 />
-        </div>
         <svg
           className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-emerald-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
           aria-hidden="true"
@@ -43,7 +40,10 @@ export default function StrategyAndAdvisory() {
           />
         </svg>
       </div>
-
+      <div className='-mt-24 -mb-12'>
+        <Header2 />
+      </div>
+      
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-5 lg:pt-20">
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
@@ -102,7 +102,8 @@ export default function StrategyAndAdvisory() {
                 gem in a sea of stones.
               </p>
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-                Steering Through Marketing's <span className='text-teal-500'>Ever-Changing</span> Terrain
+                Steering Through Marketing's{' '}
+                <span className="text-teal-500">Ever-Changing</span> Terrain
               </h2>
               <p className="mt-6">
                 But the adventure doesn't stop there. With our ongoing support,

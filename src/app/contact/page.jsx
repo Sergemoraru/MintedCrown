@@ -5,8 +5,8 @@ import { useState } from 'react'
 import Privacy from '@/components/Privacy'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Switch } from '@headlessui/react'
-import { Header } from '@/components/Header'
-import Footer from '@/components/Footer'
+import { Header2 } from '@/components/Header2'
+import { Footer2 } from '@/components/Footer2'
 import Link from 'next/link'
 
 function classNames(...classes) {
@@ -19,7 +19,7 @@ export default function Contact() {
 
   return (
     <div>
-      <Header />
+      <Header2 />
       <div className="isolate bg-white px-6 py-4 sm:py-32 lg:px-8">
         <div
           className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
@@ -224,7 +224,7 @@ export default function Contact() {
           </div>
         </form>
       </div>
-      <Footer />
+      <Footer2 />
     </div>
   )
 }
