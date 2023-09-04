@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
 import React from 'react'
-import Footer from '@/components/Footer'
+import { Footer2 } from '@/components/Footer2'
 import Image from 'next/image'
 import Serge from '@/images/team/1569181399415.png'
 import Elizabeth from '@/images/team/elizabeth.jpeg'
@@ -120,7 +120,7 @@ export default function Team() {
           </ul>
         </div>
         <div className="pt-10">
-          <Footer />
+          <Footer2 />
         </div>
       </div>
     </div>

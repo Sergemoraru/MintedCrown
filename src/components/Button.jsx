@@ -12,7 +12,7 @@ const variantStyles = {
   solid: {
     slate:
       'bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900',
-    blue: 'bg-teal-600 text-white hover:text-slate-100 hover:bg-emerald-500 active:bg-emerald-800 active:text-emerald-100 focus-visible:outline-emerald-600',
+    blue: 'bg-teal-600 text-white hover:text-slate-100 hover:bg-teal-500 active:bg-emerald-800 active:text-emerald-100 focus-visible:outline-emerald-600',
     white:
       'bg-white text-slate-900 hover:bg-blue-50 active:bg-blue-200 active:text-slate-600 focus-visible:outline-white',
   },

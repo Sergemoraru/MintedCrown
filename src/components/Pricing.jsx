@@ -129,7 +129,7 @@ export function Pricing() {
             featured
             name="Social Media Sorcery"
             description="We conjure up engaging content and strategies to make your brand reign on social platforms."
-            href="#"
+            href="/mcm-services/socialMedia"
             features={[
               'Create shareable, engaging content.',
               'Tailor strategies for each platform.',
@@ -143,7 +143,7 @@ export function Pricing() {
           <Plan
             name="Majestic Campaign Crafting"
             description="From quirky to regal, we create enchanting marketing campaigns that captivate audiences."
-            href="/"
+            href="/mcm-services/campaign"
             features={[
               'Unearth brand essence, target audience.',
               'Craft quirky, captivating concepts.',
