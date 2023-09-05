@@ -85,7 +85,7 @@ function MobileNavigation() {
   )
 }
 
-export function headmin() {
+export function Headermin() {
   return (
     <header>
       <Container>
