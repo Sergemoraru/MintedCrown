@@ -56,17 +56,6 @@ function MobileNavigation() {
         <Transition.Child
           as={Fragment}
           enter="duration-150 ease-out"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="duration-150 ease-in"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
-        >
-          <Popover.Overlay className="fixed inset-0 bg-slate-300/50" />
-        </Transition.Child>
-        <Transition.Child
-          as={Fragment}
-          enter="duration-150 ease-out"
           enterFrom="opacity-0 scale-95"
           enterTo="opacity-100 scale-100"
           leave="duration-100 ease-in"
@@ -74,10 +63,32 @@ function MobileNavigation() {
           leaveTo="opacity-0 scale-95"
         >
           <Popover.Panel
-            as="div"
-            className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
-            >
-            <hr className="m-2 border-slate-300/40" />
+            className="absolute left-1/2 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-4 sm:px-0 lg:hidden"
+            static
+          >
+            <div className="overflow-hidden rounded-2xl shadow-xl ring-1 ring-black/5">
+              <div className="relative grid gap-6 bg-teal-50 px-5 py-6 underline underline-offset-8 sm:gap-8 sm:p-8">
+                <MobileNavLink href="/">
+                  <span className="inline hover:text-teal-500">Home</span>
+                </MobileNavLink>
+                <MobileNavLink href="/contact">
+                  <span className="inline hover:text-teal-500">Lets Chat!</span>
+                </MobileNavLink>
+                <MobileNavLink href="/mcm-services/socialMedia">
+                  <span className="inline hover:text-teal-500">
+                    Social Media
+                  </span>
+                </MobileNavLink>
+                <MobileNavLink href="/mcm-services/campaign">
+                  <span className="inline hover:text-teal-500">Campaign</span>
+                </MobileNavLink>
+                <MobileNavLink href="/mcm-services/strategyAndAdvisory">
+                  <span className="inline hover:text-teal-500">
+                    StrategyAndAdvisory
+                  </span>
+                </MobileNavLink>
+              </div>
+            </div>
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
@@ -100,15 +111,11 @@ export function Headermin() {
             </Link>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
-            <Button href="/" color="blue">
-              <span>
-                Go <span className="hidden lg:inline">Home</span>
-              </span>
+            <Button className="hidden sm:block" href="/" color="blue">
+              <span className="inline">Home</span>
             </Button>
-            <Button href="/contact" color="blue">
-              <span>
-                Lets <span className="hidden lg:inline">Chat!</span>
-              </span>
+            <Button className="hidden sm:block" href="/contact" color="blue">
+              <span className="inline ">Lets Chat!</span>
             </Button>
             <div className="-mr-1 md:hidden">
               <MobileNavigation />

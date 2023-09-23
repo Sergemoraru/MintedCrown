@@ -38,14 +38,14 @@ const people = [
 export default function Team() {
   return (
     <div>
-      <div className="relative isolate overflow-hidden bg-white px-6 py-5 sm:py-32 lg:overflow-visible lg:px-0">
-        <div className="absolute -inset-0 -z-10 overflow-hidden">
-          <div className='relative'>
+      <div className="relative isolate bg-white px-6 py-5 sm:py-32 lg:overflow-visible lg:px-0">
+        <div className="relative">
+          <div className="relative">
             <Headermin />
           </div>
         </div>
       </div>
-      <div className="pb-12 sm:py-32">
+      <div className="pb-12">
         <div className="mx-auto my-0 max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">

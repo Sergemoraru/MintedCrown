@@ -6,9 +6,9 @@ import Image from 'next/image'
 import { Footermin } from '@/components/Footermin'
 import { Headermin } from '@/components/Headermin'
 
-export default function StrategyAndAdvisory() {
+export default function SocialMedia() {
   return (
-    <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+    <div className="relative isolate overflow-auto bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <svg
           className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-emerald-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
@@ -57,9 +57,9 @@ export default function StrategyAndAdvisory() {
             </div>
           </div>
         </div>
-        <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+        <div className="p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <Image
-            className="w-[48rem] max-w-none rounded-xl bg-teal-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+            className="w-full max-w-none rounded-xl bg-teal-900 shadow-xl ring-1 ring-gray-400/10"
             src={socialMedia}
             alt="workflow"
             width={912}

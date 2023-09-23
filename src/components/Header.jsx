@@ -114,7 +114,7 @@ export function Header() {
           <div className="flex items-center gap-x-5 md:gap-x-8">
             <Button href="/contact" color="blue">
               <span>
-                Lets <span className="hidden lg:inline">Chat!</span>
+                Lets Chat!
               </span>
             </Button>
             <div className="-mr-1 md:hidden">

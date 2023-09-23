@@ -62,7 +62,7 @@ export function PrimaryFeatures() {
       <Image
         className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
         src={backgroundImage}
-        alt=""
+        alt="background image"
         width={2245}
         height={1636}
         unoptimized
@@ -135,9 +135,11 @@ export function PrimaryFeatures() {
                       <Image
                         className="w-full"
                         src={feature.image}
-                        alt=""
+                        alt="feature"
                         priority
                         sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
+                        width={912}
+                        height={564}
                       />
                     </div>
                   </Tab.Panel>

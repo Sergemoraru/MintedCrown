@@ -3,12 +3,6 @@ import Image from 'next/image'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import logoLaravel from '@/images/logos/laravel.svg'
-import logoMirage from '@/images/logos/mirage.svg'
-import logoStatamic from '@/images/logos/statamic.svg'
-import logoStaticKit from '@/images/logos/statickit.svg'
-import logoTransistor from '@/images/logos/transistor.svg'
-import logoTuple from '@/images/logos/tuple.svg'
 import MintedLogo from './Logo2'
 
 export function Hero() {
@@ -18,7 +12,7 @@ export function Hero() {
         <div className="relative bottom-36 -z-50 flex flex-col items-center justify-center">
           <MintedLogo />
         </div>
-        <div className="relative mx-auto max-w-4xl" style={{ marginTop: '-350px' }}
+        <div className="relative mx-auto max-w-4xl md:mt-[-350px] sm:mt-[-300px] mt-[-250px]"
         >
           <h1 className="relative mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
             Marketing{' '}
@@ -52,7 +46,9 @@ export function Hero() {
             </Button>
           </div>
         </div>
-        <div className="mt-36 lg:mt-44">
+
+        {/* May need in future */}
+        {/* <div className="mt-36 lg:mt-44">
           <p className="font-display text-base text-slate-900">
             Trusted by these companies so far
           </p>
@@ -83,6 +79,8 @@ export function Hero() {
                         src={company.logo}
                         alt={company.name}
                         unoptimized
+                        width={company.logo.width}
+                        height={company.logo.height}
                       />
                     </li>
                   ))}
@@ -90,7 +88,7 @@ export function Hero() {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
       </div>
     </Container>
   )
