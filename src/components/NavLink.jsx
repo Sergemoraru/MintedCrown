@@ -4,7 +4,7 @@ export function NavLink({ href, children }) {
   return (
     <Link
       href={href}
-      className="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 shadow-md hover:text-emerald-800"
+      className="flex relative border-r-2 items-center justify-between overflow-hidden px-6 py-1 text-md font-sans text-slate-700 hover:text-teal-600"
     >
       {children}
     </Link>

@@ -7,12 +7,12 @@ import MintedLogo from './Logo2'
 
 export function Hero() {
   return (
-    <Container className="relative text-center">
-      <div className="relative bottom-32 flex flex-col justify-center">
-        <div className="relative bottom-36 -z-50 flex flex-col items-center justify-center">
+    <Container className="relative text-center mx-auto px-4">
+      <div className="relative flex flex-col items-center justify-center ">
+        <div className="relative bottom-36 mx-auto" >
           <MintedLogo />
         </div>
-        <div className="relative mx-auto max-w-4xl md:mt-[-350px] sm:mt-[-300px] mt-[-250px]"
+        <div className="relative mx-auto  max-w-4xl md:mt-[-350px] sm:mt-[-300px] mt-[-250px]"
         >
           <h1 className="relative mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
             Marketing{' '}
@@ -35,15 +35,9 @@ export function Hero() {
             social media realms, we'll make your brand the true ruler of its
             domain.
           </p>
-          <div className="mt-10 flex justify-center gap-x-6">
-            <Button href="/register">Services</Button>
-            <Button href="" variant="outline">
-              <svg
-                aria-hidden="true"
-                className="h-3 w-2 flex-none fill-emerald-600 group-active:fill-current"
-              ></svg>
-              <span className="">Sectors</span>
-            </Button>
+          <div className="mt-10 mb-16 flex items-center justify-center gap-x-6 ">
+            <Button href="#services">Services</Button>
+            <Button href="/sectors">Sectors</Button>
           </div>
         </div>
 

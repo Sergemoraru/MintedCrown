@@ -80,9 +80,14 @@ function MobileNavigation() {
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
           >
             <MobileNavLink href="#features">Features</MobileNavLink>
-            <MobileNavLink href="#testimonials">Testimonials</MobileNavLink>
+            <MobileNavLink href="#Sectors">Sectors</MobileNavLink>
             <MobileNavLink href="#services">Services</MobileNavLink>
+            <MobileNavLink href="#faq">FAQ</MobileNavLink>
+            <MobileNavLink href="/meetTheTeam">Meet the Team</MobileNavLink>
             <hr className="m-2 border-slate-300/40" />
+            <MobileNavLink href="/mcm-services/socialMedia">Social Media</MobileNavLink>
+            <MobileNavLink href="/mcm-services/campaign">Campaign</MobileNavLink>
+            <MobileNavLink href="/mcm-services/strategyAndAdvisory">Strategy & Advisory</MobileNavLink>
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
@@ -99,11 +104,11 @@ export function Header() {
             <Link
               href="/"
               aria-label="Home"
-              className="relative right-28 top-7 flex "
+              className="relative right-28 top-7 flex"
             >
-              <Logo className="h-10 w-auto" />
+              <Logo className="h-10 w-auto md:mx-auto" />
             </Link>
-            <div className="hidden md:flex md:gap-x-6">
+            <div className="hidden md:flex border-l-2">
               <NavLink href="#features">Features</NavLink>
               <NavLink href="#testimonials">Sectors</NavLink>
               <NavLink href="#services">Services</NavLink>
